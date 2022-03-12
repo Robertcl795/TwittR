@@ -16,12 +16,6 @@
                         <span>Home</span>
                     </a>
                 </li>
-                <li class:active={path === '/home'}>
-                    <a href="/home">
-                        <Icon width="32" height="32" name="home" />
-                        <span>Home</span>
-                    </a>
-                </li>
                 <li class:active={path === '/home/profile/matia'}>
                     <a href="/home/profile/matia">
                         <Icon width="32" height="32" name="profile" />

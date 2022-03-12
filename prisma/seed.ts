@@ -22,7 +22,7 @@ function getUsers() {
 			name: 'matia',
 			handle: '@joyofcodedev',
 			email: 'matia@example.test',
-			avatar: '/profile/matia/avatar.webp',
+			avatar: 'https://gravatar.com/avatar/284cc34a5664be15b079e826efec1ba5?s=400&d=robohash&r=x',
 			about: 'Likes long walks on the beach. 😘',
 			tweets: {
 				create: [
@@ -57,7 +57,7 @@ function getUsers() {
 			name: 'bob',
 			handle: '@bobross',
 			email: 'bob@example.test',
-			avatar: '/profile/bob/avatar.webp',
+			avatar: 'https://gravatar.com/avatar/91c80b90a42d96ddf6fa86e1651a62f5?s=400&d=robohash&r=x',
 			about: 'Likes painting.',
 			tweets: {
 				create: [
