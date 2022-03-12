@@ -1,7 +1,10 @@
-<script>
-import Icon from "$root/components/icon.svelte";
-
+<script context="module">
+// import Icon from "$root/components/icon.svelte";
+    export const load = () => {
+        throw new Error("Oops")
+    }
 </script>
+
 <svelte:head>
     <title>Home</title>
 </svelte:head>
