@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Compose from '$root/components/compose.svelte';
     import Tweet from '$root/components/tweet.svelte'
     import type { TweetType } from '$root/types'
 
@@ -9,10 +10,12 @@
     <title>Home</title>
 </svelte:head>
 
+<Compose />
+
 <h1>Feed</h1>
-{#each tweets as tweet (tweet.id)}
-    <Tweet {tweet}/>
-{/each}
+    {#each tweets as tweet (tweet.id)}
+        <Tweet {tweet}/>
+    {/each}
 <style>
     h1 {
         position: sticky;
