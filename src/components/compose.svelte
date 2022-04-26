@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { enhance } from '$root/lib/form'
     let tweet = ''
     const maxCharacters = 140
 
@@ -7,7 +8,9 @@
 
 <div class="compose">
     <img src="https://gravatar.com/avatar/284cc34a5664be15b079e826efec1ba5?s=400&d=robohash&r=x" alt="Avatar"/>
-    <form action="/home" method="post" autocomplete="off">
+    <form action="/home" method="post" autocomplete="off" use:enhance={{
+		result: ({form}) => form.reset()
+	}}>
         <input type="text" name="tweet" bind:value="{tweet}" placeholder="What's your hot take?" aria-label="Enter your tweet"/>
         <button type="submit" class="btn" class:error="{charactersLeft < 0}" disabled="{charactersLeft <= 0}">
             { charactersLeft === maxCharacters ? 'Tweet' : charactersLeft }

@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class:active={path === '/home/settings'}>
-                    <a href="/settings">
+                    <a href="/home/settings">
                         <Icon width="32" height="32" name="settings" />
                         <span>Settings</span>
                     </a>
